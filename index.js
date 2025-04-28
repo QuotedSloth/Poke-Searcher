@@ -15,10 +15,21 @@ async function fetchData(){
         const data = await response.json();
 
         if(data.types[1]){
+            var weakness = "";
             const pkmnType = data.types[0].type.name;
             const pkmnType2 = data.types[1].type.name
             const typeText = document.getElementById("pkmnType");
+            const weaknessText = document.getElementById("pkmnWeakness")
             typeText.innerHTML = `This pokémon is a ${pkmnType} and ${pkmnType2} type`;
+
+            switch(pkmnType){
+                case pkmnType = "normal":
+                    console.log("test123")
+                    weakness = "fighting"
+                    weaknessText.innerHTML = `This pokemon is weak to ${weakness}`;
+
+            }
+
         }
 
         else{

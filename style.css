@@ -18,6 +18,10 @@ body{
     font-size: 35px;
 }
 
+#pkmnWeakness{
+    font-size: 35px;
+}
+
 .content{
     backdrop-filter: blur(5.5px);
     background: rgba(255, 255, 255, 0.75);
