@@ -16,7 +16,7 @@ async function fetchData(){
 
         if(data.types[1]){
             var weakness = "";
-            const pkmnType = data.types[0].type.name;
+            var pkmnType = data.types[0].type.name;
             const pkmnType2 = data.types[1].type.name
             const typeText = document.getElementById("pkmnType");
             const weaknessText = document.getElementById("pkmnWeakness")
